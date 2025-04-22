@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Color Type</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/types.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Color Type</div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./types.html">Цветотипы</a></li>
+                <li><a href="#wardrobe">Гардероб</a></li>
+                <li><a href="#theory">Теория цвета</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="color-type-section">
+        <div class="container">
+            <div class="color-type-content">
+                <div class="text-content">
+                    <h2>Определить цветотип онлайн</h2>
+                    <h3>Исключить неподходящие цвета</h3>
+                    <p class="lead-text">Вам надоело проходить тесты и гадать, какой у вас цветотип? Закажите
+                        консультацию профессионального стилиста.</p>
+
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-camera"></i>
+                            <p>По вашей фотографии мы определяем, какой из 12 цветотипов вам подходит</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-video"></i>
+                            <p>При видео-консультации расскажем, какие цвета подчеркнут ваши достоинства</p>
+                        </div>
+                    </div>
+
+                    <button class="cta-button contact-trigger">Записаться на консультацию</button>
+                </div>
+
+                <div class="image-content">
+                    <img src="images/color-analysis.jpg" alt="Анализ цветотипа" class="main-image">
+                    <div class="color-palettes">
+                        <div class="palette warm"></div>
+                        <div class="palette cool"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="simple-footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +7 (909) 514-00-24</p>
+                <p><i class="fas fa-envelope"></i> evgeevavalentina@bk.ru</p>
+            </div>
+            <div class="copyright">
+                <p>Сайт разработан в учебных целях, Евгеевой Валентиной студенткой группы 3 ИСиП-1</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="contact-modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Свяжитесь с нами</h3>
+            <div class="contact-options">
+                <div class="contact-option">
+                    <i class="fas fa-phone"></i>
+                    <p>+7 (909) 514-00-24</p>
+                    <button class="copy-btn" data-clipboard-text="+79095140024">
+                        <i class="far fa-copy"></i> Копировать
+                    </button>
+                </div>
+                <div class="contact-option">
+                    <i class="fas fa-envelope"></i>
+                    <p>evgeevavalentina@bk.ru</p>
+                    <button class="copy-btn" data-clipboard-text="evgeevavalentina@bk.ru">
+                        <i class="far fa-copy"></i> Копировать
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>

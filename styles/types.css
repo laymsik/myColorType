@@ -1,0 +1,258 @@
+/* Стили для секции */
+.color-type-section {
+    padding: 120px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.color-type-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.text-content h3 {
+    font-size: 1.8rem;
+    color: #966668;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.lead-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.features {
+    margin: 30px 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.feature-item i {
+    color: #966668;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.cta-button {
+    background-color: #966668;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background-color: #F8F2FA;
+    color: #966668;
+}
+
+.image-content {
+    flex: 1;
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.color-palettes {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    display: flex;
+    gap: 15px;
+}
+
+.palette {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.warm {
+    background: linear-gradient(135deg, #FFD700, #FF8C00, #FF4500);
+}
+
+.cool {
+    background: linear-gradient(135deg, #4169E1, #9370DB, #87CEFA);
+}
+
+/* Стили для модального окна */
+.contact-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contact-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    transform: translateY(-50px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact-modal.active .modal-content {
+    transform: translateY(0);
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s;
+}
+
+.close-modal:hover {
+    color: #333;
+}
+
+.modal-content h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #f9f9f7;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.contact-option:hover {
+    transform: translateY(-5px);
+}
+
+.contact-option i {
+    font-size: 2rem;
+    color: #966668;
+    margin-bottom: 10px;
+}
+
+.contact-option p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+.copy-btn {
+    background: #c2a0a1;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.copy-btn:hover {
+    background: #F8F2FA;
+    color: #966668;
+}
+
+.contact-trigger {
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    transition: background 0.3s;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .color-type-content {
+        flex-direction: column;
+    }
+    
+    .image-content {
+        margin-top: 40px;
+        width: 100%;
+    }
+    
+    .color-palettes {
+        right: 0;
+        bottom: -20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-content h2 {
+        font-size: 2rem;
+    }
+    
+    .text-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .palette {
+        width: 80px;
+        height: 80px;
+    }
+}
