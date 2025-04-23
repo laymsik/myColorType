@@ -1,0 +1,178 @@
+.color-theory-section {
+    padding: 120px 0;
+    background-color: #f9f9f7;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.theory-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.theory-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.theory-visual {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.theory-visual img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.theory-text {
+    flex: 1;
+}
+
+.theory-text h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.theory-text p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.theory-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.theory-list li {
+    padding: 8px 0;
+    color: #555;
+    position: relative;
+    padding-left: 25px;
+}
+
+.color-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Стили для визуальных элементов */
+.harmony-types {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.harmony-card {
+    height: 120px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.psychology-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+
+.psychology-item {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    line-height: 1.4;
+    padding: 15px;
+}
+
+/* CTA блок */
+.theory-cta {
+    background: #2c3e50;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.theory-cta h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.theory-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.cta-button {
+    background: #BCBF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background: #a8ab46;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .theory-block, .theory-block.reverse {
+        flex-direction: column;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .harmony-types, .psychology-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .psychology-item {
+        height: 120px;
+    }
+    
+    .theory-cta {
+        padding: 30px 20px;
+    }
+}
